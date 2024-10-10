@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: peterevans/dockerhub-description
-          short-description: ${{ github.event.repository.description }}
+#          short-description: ${{ github.event.repository.description }}
 
 
       - name: Extract metadata (tags, labels) for Docker
