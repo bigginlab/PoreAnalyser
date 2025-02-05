@@ -3,11 +3,13 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
 name: Publish Docker image
 
 on:
-#  push:
- #   branches: [ "main" ]
   release:
     types: [published]
 
@@ -25,13 +27,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      #- name: Docker Hub Description
-      #  uses: peter-evans/dockerhub-description@v4
-      #  with:
-      #    username: ${{ secrets.DOCKERHUB_USERNAME }}
-      #    password: ${{ secrets.DOCKERHUB_TOKEN }}
-      #    repository: peterevans/dockerhub-description
-#          short-description: ${{ github.event.repository.description }}
+      - name: Docker Hub Description
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: peterevans/dockerhub-description
+          short-description: ${{ github.event.repository.description }}
 
 
       - name: Extract metadata (tags, labels) for Docker

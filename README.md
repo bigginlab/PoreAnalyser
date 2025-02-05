@@ -31,9 +31,14 @@ Recent advances in structural biology have led to a growing number of ion channe
 - Capture pore asymmetry.
   - Asymmetry of crystal/cryoEM structures due to heterogeneous subunit composition.
   - From crystal structure broken in simulations.
+<<<<<<< HEAD
 - Making software tools accessible to the community via an interactive web-service. No installation needed when using the web-page. For python users, we publish an easy-to-install python package.
 - Furthermore, we make use of the more accurate characterization of channel pores to refine a physical conductance model to obtain a heuristic estimate for single-channel conductance 
 
+=======
+- Making software tools accessible to the community via an interactive web-service. No installation needed when using the web-page. For python users, we publish an easy-to-install python package. 
+- Furthermore, we make use of the more accurate characterization of channel pores to refine a physical conductance model to obtain a heuristic estimate for single-channel conductance.
+>>>>>>> upstream/main
 
 # Path finding with ellipsoidal probe particle
 

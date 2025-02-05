@@ -2,13 +2,18 @@ from setuptools import setup
 
 setup(
     name='PoreAnalyser', #'PoreFinding',
+<<<<<<< HEAD
     version='0.0.10',    
+=======
+    version='0.1.1',    
+>>>>>>> upstream/main
     description='A Python package for analysing (ion channel) pore profiles',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://poreanalyser.bioch.ox.ac.uk/',
     author='David Seiferth',
     author_email='david.seiferth@oriel.ox.ac.uk',
+    python_requires='>=3.6,<3.13',
     #license='BSD 2-clause',
     packages=['PoreAnalyser'],
     install_requires=[
@@ -35,5 +40,6 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
 )
