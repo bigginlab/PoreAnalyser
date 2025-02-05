@@ -2,11 +2,7 @@ from setuptools import setup
 
 setup(
     name='PoreAnalyser', #'PoreFinding',
-<<<<<<< HEAD
-    version='0.0.10',    
-=======
     version='0.1.1',    
->>>>>>> upstream/main
     description='A Python package for analysing (ion channel) pore profiles',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
