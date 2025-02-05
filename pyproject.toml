@@ -8,18 +8,10 @@ authors = [{name = "David Seiferth", email = "david.seiferth@oriel.ox.ac.uk"}]
 license = {file = "LICENSE"}
 readme = {file = "README.md", content-type = "text/markdown"}
 description = "PoreAnalyser package based on HOLE and MDAnalysis"
-<<<<<<< HEAD
-version = "0.0.10"
-requires-python = ">=3.6,<=3.12"
-dependencies = [
-#'python<=3.12',
-'numpy >=1.0, <1.23.0',
-=======
 version = "0.1.1"
 requires-python = ">=3.6,<3.13"
 dependencies = [
 'numpy >=1.0',
->>>>>>> upstream/main
 'MDAnalysis >=2.0, <3.0',
 'matplotlib>=0.1',
 'pandas>=1.3',
@@ -39,6 +31,4 @@ poreanalyser = "poreanalyser:main"
 
 [tool.flit.sdist]
 include = ["LICENSE", "requirements.txt"]
-
-
 
