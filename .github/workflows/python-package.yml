@@ -4,6 +4,7 @@
 name: PoreAnalyser #PoreFinding_Ellipsoid # PoreFinding_pdb PoreFinder
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
